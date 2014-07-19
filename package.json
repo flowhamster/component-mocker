@@ -1,0 +1,16 @@
+{
+  "name": "component-mocker",
+  "version": "0.1.0",
+  "description": "Let you mock objects easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mocks",
+    "stubs",
+    "testing"
+  ],
+  "author": "Jonas Aschenbrenner",
+  "license": "BSD"
+}
