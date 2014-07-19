@@ -12,5 +12,10 @@
     "testing"
   ],
   "author": "Jonas Aschenbrenner",
-  "license": "BSD"
+  "license": "BSD",
+  "homepage": "https://github.com/Sanjo/component-mocker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sanjo/component-mocker.git"
+  }
 }
