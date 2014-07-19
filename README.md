@@ -1,7 +1,7 @@
 # component-mocker
 
 This package provides functionality for mocking objects easily (including functions and classes).
-It was extracted from [jest](https://github.com/facebook/jest).
+It has been extracted from [jest](https://github.com/facebook/jest).
 You can find detailed documentation in the `index.js` file.
 The LICENSE and PATENTS files are copies from the jest project.
 
