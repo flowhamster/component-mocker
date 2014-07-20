@@ -1,6 +1,6 @@
 {
   "name": "component-mocker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Let you mock objects easily",
   "main": "index.js",
   "scripts": {
