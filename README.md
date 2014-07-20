@@ -13,3 +13,9 @@ var myModule = ...; // Your module that you want to mock
 var myModuleMetadata = mocker.getMetadata(myModule);
 var myModuleMock = mocker.generateFromMetadata(myModuleMetadata);
 ```
+
+## In browser usage
+
+You can also use the `index.js` script in the browser.
+The module is then available on the global scope under the name `mocker`.
+You can also run it in no conflict mode by calling `var mocker = mocker.noConflict()`.
