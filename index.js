@@ -34,6 +34,11 @@
       return 'object';
     }
 
+    //Infinity must be special cased because JSON.stringify will convert it
+    //  to null
+    if (ref === Infinity) {
+      return 'infinity'
+    }
     // consider number and string fields to be constants that we want to
     // pick up as they are
     if (isA('Number', ref) || isA('String', ref)) {
@@ -46,10 +51,6 @@
 
     if (ref === null) {
       return 'null';
-    }
-
-    if (ref === Infinity) {
-      return 'infinity'
     }
 
     return null;
@@ -251,6 +252,9 @@
       || type === 'undefined'
       || type === 'null') {
       metadata.value = component;
+      return metadata;
+    } else if (type === 'infinity') {
+      metadata.value = 'infinity'
       return metadata;
     } else if (type === 'function') {
       metadata.__TCmeta = component.__TCmeta;
