@@ -48,6 +48,10 @@
       return 'null';
     }
 
+    if (ref === Infinity) {
+      return 'infinity'
+    }
+
     return null;
   }
 
@@ -66,6 +70,9 @@
     case 'null':
     case 'undefined':
       return metadata.value;
+
+    case 'infinity':
+      return Infinity;
 
     case 'function':
       var defaultReturnValue;
